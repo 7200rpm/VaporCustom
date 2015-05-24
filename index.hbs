@@ -1,5 +1,13 @@
 {{!< default}}
 
+	<header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+		<h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+		<h2 class="blog-description">{{@blog.description}}</h2>
+		{{> "social"}}
+	</header>
+
+	
+	
 {{> menu}}
 
 <main class="content" role="main">

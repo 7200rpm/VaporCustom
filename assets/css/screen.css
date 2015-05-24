@@ -108,7 +108,18 @@ a.archive-link,
     position: relative;
     display: table;
     width: 100%;
-    height: 25vh;
+    height: 30vh;
+    text-align: center;
+    background: #222 no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.post-header {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 30vh;
     text-align: center;
     background: #222 no-repeat center center;
     background-size: cover;
@@ -120,8 +131,11 @@ a.archive-link,
 }
 
 .articleImage {
+	display: block;
 	width: 100%;
-	max-height: 450px;
+	max-height: 1450px;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 article.preview {
@@ -133,6 +147,7 @@ article.preview p.readmore {
   text-transform: uppercase;
   font-weight: 400;
 }
+
 /* === Header === */
 #blog-logo {
   display: block;
@@ -160,7 +175,6 @@ h1.blog-title {
   padding: 0;
 }
 h2.blog-description {
-  margin-bottom: 2em;
   padding: .5em 1em;
   line-height: 1.2em;
 }
@@ -333,8 +347,8 @@ nav ul {
 nav ul li {
   display: inline-block;
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 24px;
+  font-weight: 400;
   margin: 0;
   padding: 0 .5em;
   text-align: center;
@@ -539,4 +553,21 @@ table tfoot {
   .page-number {
     display: block;
   }
+}
+
+/* From Velox */
+.cover {
+    background-size: cover;
+    background-position: center}
+.cover-mask {
+    background: rgba(0,0,0,0.1);
+    color: #fff;
+}
+.cover-mask img {
+    border: 3px solid rgba(255,255,255,0.7)}
+.no-cover img {
+    border: 2px solid rgba(255,255,255,0.6)}
+	
+.fa {
+  color: black;
 }

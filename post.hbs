@@ -1,10 +1,30 @@
 {{!< default}}
 
+
 <main class="content" role="main">
+
+{{#post}}
+
+{{#if image}}
+
+<header>
+  <div class="post-header" style="background-image: url({{image}})">
+
+  </div>
+</header>
+
+{{else}}
+
+<header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+		<h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+		<h2 class="blog-description">{{@blog.description}}</h2>
+		{{> "social"}}
+	</header>
+
+{{/if}}
 
     <article class="{{post_class}}">
 
-        {{#post}}
 
         <header>
         {{#if tags}}<div class="post-meta tags">Posted in {{tags}}</div>{{/if}}
