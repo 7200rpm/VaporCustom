@@ -1,16 +1,29 @@
 {{!< default}}
 
 	<header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
-		<h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+		
 		<h2 class="blog-description">{{@blog.description}}</h2>
-		{{> "social"}}
+		
 	</header>
 
-	
-	
-{{> menu}}
-
-<main class="content" role="main">
+<main  role="main">
+    
+    
+    <div class="ads">
+    
+    
+    
+    <!-- AsyncWriterTop -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1195309242567386"
+     data-ad-slot="5021306400"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        
+        </div>
 
     {{#foreach posts}}
 
@@ -29,7 +42,9 @@
     </article>
 
     {{/foreach}}
+        
 
     {{pagination}}
 
 </main>
+

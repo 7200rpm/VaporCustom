@@ -1,6 +1,9 @@
-<nav class="menu" role="nav">
-    <ul>
-      <li><a href="about">About</a></li>
-      <li><a href="resume">Resume</a></li>
-    </ul>
-</nav>
+<nav>
+            <ul>
+                {{! Create your blog menu here - sample given below }}
+                <li><a href="{{@blog.url}}">Home</a></li>
+                <li><a href="{{@blog.url}}/Photos">Photos</a></li>
+                <li><a href="{{@blog.url}}/Resume">Resume</a></li>
+                <li><a href="{{@blog.url}}/About">About</a></li>
+            </ul>
+        </nav>
